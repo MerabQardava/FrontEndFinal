@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <nav id="navbar">
+
+     
+    <div id="nav-div">
+      <div>
+        <input onclick="language_switch('eng')" type="image" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png" height="15px" width="25px" id="eng">
+        <input onclick="language_switch('geo')" type="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Georgia.svg/255px-Flag_of_Georgia.svg.png" height="15px" width="25px" id="geo">
+      </div>
+      <div class="buttons"><a href="main.html" id="mecho">მთავარი</a></div>
+      <div class="buttons"><a href="products.html" id="products">პროდუქცია</a></div>
+      <div class="buttons"><a href="contacts.html" id="contacts">კონტაქტი</a></div>
+      <div class="buttons"><a href="login.html" id="login">ავტორიზაცია</a></div>
+      <div class="buttons"><a href="register.html" id="registration">რეგისტრაცია</a></div>
+      <div class="buttons"><a href="reklamichi.html" id="ads">რეკლამები</a></div>
+      <div class="buttons"><a href="ip.html" id="ip_navigation">აიპი</a></div>
+        
+      
+    </div>
+  </nav>
+
+    <section id="register_section">
+        <header id="header1"><h1 style="border-bottom:2px solid;width:fit-content" id="register_header">რეგისტრაცია</h1></header>
+        <div id="register_div">
+          <form action="">
+            <span style="color: red;" id="email_alert"></span>
+            <input id="email" type="text" class="register_input" placeholder="იმეილი">
+            <span style="color: red;" id="password_alert"></span>
+            <input id="password1" type="password" class="register_input" placeholder="პაროლი">
+            <input id="password2" type="password" class="register_input" placeholder="დაადასტურეთ პაროლი">
+            <input id="date_input" type="text" class="register_input" value="mecho" readonly>
+            <input id="input_name" type="text" class="register_input" placeholder="სახელი">
+            <input id="country" type="text" class="register_input" placeholder="ქვეყანა">
+            <input id="city" type="text" class="register_input" placeholder="ქალაქი">
+            <input id="number" type="number" class="register_input" placeholder="ნომერი">
+            <span style="display:none;color: red;" id="alert"></span>
+            <input type="button" value="submit" onclick="register_button()">
+          </form>
+            
+        </div>
+    <section>
+
+
+
+    </section>
+
+
+    <script src="register.js"> </script>
+    
+
+</body>
+</html>
